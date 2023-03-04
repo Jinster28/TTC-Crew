@@ -5,6 +5,29 @@
     color: #1F2937;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}
+
+.footer {
+    display: flex;
+    flex: 0 0 auto;
+    height: 100px;
+    background-color: #1F2937;
+    
+    color: white;
+}
+
 .header {
+    display: flex;
+    flex: 0 0 auto;
+    height: 100px;
+    background-color: #1F2937;
+    color: white;
     
 }
