@@ -5,14 +5,13 @@
     color: white;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     display: flex;
     flex-direction: column;
-}
-
-.content {
-    display: flex;
-    flex: 1;
 }
 
 .footer {
@@ -33,17 +32,50 @@ body {
     height: 100px;
     background-color: #1F2937;
     color: white;
-    justify-content: space-between;
+    justify-content: space-between;   
+}
+
+.header_links {
+    display: flex;
+    align-items: flex-end;
+}
+
+.intro {
+    display: flex;
+    background-color: #1F2937;
+    
+}
+
+.intro_tb {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro_title {
+    font-size: 48px;
+    font-weight: 1000;  
 }
 
 .logo {
-    padding: 20px;
+    padding: 15px;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 25px;
+    align-self: center;
+    border-style: double;
+    margin: 15px;
+    border-radius: 15px;
 }
 
 .top_link {
-    text-decoration: none;
     color: white;
-    padding: 10px;
+    padding: 5px;
+    border-style: double;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.wpbody {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
 }
