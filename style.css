@@ -115,3 +115,51 @@ body {
     flex: 1;
     flex-direction: column;
 }
+
+.xinfo {
+    display: flex;
+    background-color: white; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.xinfo_box {
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.xinfo_con {
+    display: flex;
+    justify-content: space-between;
+}
+
+.xinfo_p1,
+.xinfo_p2,
+.xinfo_p3 {
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    flex: 1 1 0;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: #3882F6;
+    padding: 20px;
+    object-fit: contain;
+    margin-right: 30px;
+    margin-bottom: 15px;
+}
+
+.xinfo_t {
+    color: black;
+    text-align: center;
+    
+}
+
+.xinfo_title {
+    color: black;
+    font-size: 34px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    font-weight: 600;
+}
