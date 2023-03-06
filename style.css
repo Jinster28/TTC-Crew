@@ -12,6 +12,7 @@ a {
 body {
     display: flex;
     flex-direction: column;
+    margin: 0px;
 }
 
 .footer {
@@ -38,17 +39,28 @@ body {
 .header_links {
     display: flex;
     align-items: flex-end;
+    padding-right: 20px;
 }
 
 .intro {
     display: flex;
     background-color: #1F2937;
-    
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.intro_pic {
+    display: flex;
+    padding-bottom: 30px;
+    padding-right: 15px;
 }
 
 .intro_tb {
     display: flex;
     flex-direction: column;
+    margin-left: 60px;
+    margin-top: 25px;
+    margin-right: 60px;
 }
 
 .intro_title {
@@ -56,21 +68,45 @@ body {
     font-weight: 1000;  
 }
 
+.ip1,
+.ip2,
+.ip3 {
+    width: 260px;
+    height: 500px;
+    margin: 10px;
+    flex: 1;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: rgb(14, 14, 71);
+    border-width: thin;
+    object-fit: cover;
+}
+
+.ip1 {
+    object-position: 75% top; 
+}
+
+.ip2 {
+    object-position: 42% top;
+}
+
+.ip3 {
+    object-position: 52% top;
+}
+
 .logo {
     padding: 15px;
     font-weight: 700;
     font-size: 25px;
     align-self: center;
-    border-style: double;
     margin: 15px;
-    border-radius: 15px;
+    margin-top:25px;
+    margin-left: 40px; 
 }
 
 .top_link {
     color: white;
-    padding: 5px;
-    border-style: double;
-    border-radius: 10px;
+    padding: 10px;
     margin: 5px;
 }
 
