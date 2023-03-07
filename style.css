@@ -104,6 +104,39 @@ body {
     margin-left: 40px; 
 }
 
+.pslide {
+    background-color: lightgrey;
+    overflow: hidden;  
+}
+
+@keyframes pslide {
+    0% { left: 0; }
+	33% { left: -30%; }
+	67% { left: -58.7%; }
+    99.5% { left: -100%; }
+    100% { left: 0; }
+}
+
+.pslide figure {
+    position: relative;
+    animation: 18s pslide infinite;
+}
+
+.pslide figure img {
+    float: left;
+}
+
+.ps_1 {
+    height: 400px;
+    width: 500px;
+    object-fit: cover;
+    margin: 15px;
+    margin-bottom: 25px;
+    border-style: inset;
+    border-radius: 15px;
+    border-color: #1F2937;
+}
+
 .top_link {
     color: white;
     padding: 10px;
@@ -132,6 +165,7 @@ body {
 .xinfo_con {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 50px;
 }
 
 .xinfo_p1,
@@ -152,8 +186,7 @@ body {
 
 .xinfo_t {
     color: black;
-    text-align: center;
-    
+    text-align: center; 
 }
 
 .xinfo_title {
