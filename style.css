@@ -107,34 +107,38 @@ body {
 .pslide {
     background-color: lightgrey;
     overflow: hidden;  
+    position: relative; 
+    display: flex;
+    justify-content: center;
 }
 
-@keyframes pslide {
-    0% { left: 0; }
-	33% { left: -30%; }
-	67% { left: -58.7%; }
-    99.5% { left: -100%; }
-    100% { left: 0; }
-}
+@keyframes ps_1 {
+    0% {background-image: url(./static/Toby-003.jpg); opacity: 1;}
+    10% {background-image: url(./static/Tira-003.jpg);}
+    20% {background-image: url(./static/Char-003.jpg);}
+    30% {background-image: url(./static/Gang-002.jpg);}
+    40% {background-image: url(./static/Toby-002.jpg);}
+    50% {background-image: url(./static/Tira-002.jpg);}
+    60% {background-image: url(./static/Char-002.jpg);}
+    70% {background-image: url(./static/Gang-001.jpg);}
+    80% {background-image: url(./static/Toby-001.jpg);}
+    90% {background-image: url(./static/Tira-001.jpg);}
+    100% {background-image: url(./static/Char-001.jpg); background-position: center;}
+    
 
-.pslide figure {
-    position: relative;
-    animation: 18s pslide infinite;
-}
-
-.pslide figure img {
-    float: left;
 }
 
 .ps_1 {
-    height: 400px;
-    width: 500px;
-    object-fit: cover;
+    height: 500px;
+    width: 600px;
+    background-size: cover;
     margin: 15px;
     margin-bottom: 25px;
     border-style: inset;
     border-radius: 15px;
     border-color: #1F2937;
+    animation: 60s ps_1 infinite;
+}
 }
 
 .top_link {
