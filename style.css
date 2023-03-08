@@ -113,11 +113,11 @@ body {
 }
 
 @keyframes ps_1 {
-    0% {background-image: url(./static/Toby-003.jpg); opacity: 1;}
-    10% {background-image: url(./static/Tira-003.jpg);}
+    0% {background-image: url(./static/Toby-003.jpg);}
+    10% {background-image: url(./static/Tira-003.jpg); background-position: center;}
     20% {background-image: url(./static/Char-003.jpg);}
     30% {background-image: url(./static/Gang-002.jpg);}
-    40% {background-image: url(./static/Toby-002.jpg);}
+    40% {background-image: url(./static/Toby-002.jpg); background-position: center;}
     50% {background-image: url(./static/Tira-002.jpg);}
     60% {background-image: url(./static/Char-002.jpg);}
     70% {background-image: url(./static/Gang-001.jpg);}
@@ -133,11 +133,15 @@ body {
     width: 600px;
     background-size: cover;
     margin: 15px;
-    margin-bottom: 25px;
+    margin-top: 45px;
+    margin-bottom: 45px;
     border-style: inset;
     border-radius: 15px;
     border-color: #1F2937;
     animation: 60s ps_1 infinite;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
 }
 }
 
