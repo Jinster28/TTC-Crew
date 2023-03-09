@@ -111,7 +111,6 @@ body {
     position: relative; 
     display: flex;
     justify-content: center;
-<<<<<<< HEAD
     flex-direction: column;
     text-align: center;
     align-items: center;
@@ -129,34 +128,12 @@ body {
     80% {content: url(./static/Toby-001.jpg); object-position: 50% 50%;}
     90% {content: url(./static/Tira-001.jpg);}
     100% {content: url(./static/Char-001.jpg);}
-=======
-}
-
-@keyframes ps_1 {
-    0% {background-image: url(./static/Toby-003.jpg);}
-    10% {background-image: url(./static/Tira-003.jpg); background-position: center;}
-    20% {background-image: url(./static/Char-003.jpg);}
-    30% {background-image: url(./static/Gang-002.jpg);}
-    40% {background-image: url(./static/Toby-002.jpg); background-position: center;}
-    50% {background-image: url(./static/Tira-002.jpg);}
-    60% {background-image: url(./static/Char-002.jpg);}
-    70% {background-image: url(./static/Gang-001.jpg);}
-    80% {background-image: url(./static/Toby-001.jpg);}
-    90% {background-image: url(./static/Tira-001.jpg);}
-    100% {background-image: url(./static/Char-001.jpg); background-position: center;}
-    
-
->>>>>>> 53d0e3945085366b95c672f850f53cb1221e8de5
 }
 
 .ps_1 {
     height: 500px;
     width: 600px;
-<<<<<<< HEAD
     object-fit: cover;
-=======
-    background-size: cover;
->>>>>>> 53d0e3945085366b95c672f850f53cb1221e8de5
     margin: 15px;
     margin-top: 45px;
     margin-bottom: 45px;
@@ -168,15 +145,12 @@ body {
     animation-fill-mode: both;
     animation-timing-function: linear;
 }
-<<<<<<< HEAD
 
 .ps_title {
     font-size: 36px;
     font-weight: bold;
     color: #1F2937;
     margin-top: 30px;
-=======
->>>>>>> 53d0e3945085366b95c672f850f53cb1221e8de5
 }
 
 .top_link {
