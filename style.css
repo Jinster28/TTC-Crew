@@ -40,6 +40,7 @@ body {
     display: flex;
     align-items: flex-end;
     padding-right: 20px;
+    gap: 15px;
 }
 
 .intro {
@@ -104,6 +105,54 @@ body {
     margin-left: 40px; 
 }
 
+.pslide {
+    background-color: lightgrey;
+    overflow: hidden;  
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+@keyframes ps_1 {
+    0% {content: url(./static/Toby-003.jpg);}
+    10% {content: url(./static/Tira-003.jpg); object-position: 50% 50%;}
+    20% {content: url(./static/Char-003.jpg);}
+    30% {content: url(./static/Gang-002.jpg);}
+    40% {content: url(./static/Toby-002.jpg); object-position: right 50%;}
+    50% {content: url(./static/Tira-002.jpg);}
+    60% {content: url(./static/Char-002.jpg);}
+    70% {content: url(./static/Gang-001.jpg);}
+    80% {content: url(./static/Toby-001.jpg); object-position: 50% 50%;}
+    90% {content: url(./static/Tira-001.jpg);}
+    100% {content: url(./static/Char-001.jpg);}
+}
+
+.ps_1 {
+    height: 500px;
+    width: 600px;
+    object-fit: cover;
+    margin: 15px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    border-style: inset;
+    border-radius: 15px;
+    border-color: #1F2937;
+    animation: 60s ps_1 infinite;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+}
+
+.ps_title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1F2937;
+    margin-top: 30px;
+}
+
 .top_link {
     color: white;
     padding: 10px;
@@ -132,6 +181,7 @@ body {
 .xinfo_con {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 50px;
 }
 
 .xinfo_p1,
@@ -152,8 +202,7 @@ body {
 
 .xinfo_t {
     color: black;
-    text-align: center;
-    
+    text-align: center; 
 }
 
 .xinfo_title {
